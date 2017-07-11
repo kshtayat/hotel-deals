@@ -55,6 +55,9 @@ Make sure you run composer install Update dependencies
 
 Demo app
 --------
+```
+    http://hotel-offer-app.herokuapp.com/
+```
 
 Notes:
 ------
