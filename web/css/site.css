@@ -1,0 +1,139 @@
+body {
+    background: #EEE;
+}
+
+form {
+    max-width: 50%;
+    margin: 0 auto;
+}
+.form-group {
+    text-align: left;
+}
+
+.form-group.align-center {
+    text-align: center;
+}
+
+form  button {
+    background: #ffcb00;
+    color: #3d3100;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.list-view {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
+    min-height: 150px;
+}
+
+.hotel {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #c7c7c7;
+    margin-bottom: 15px;
+}
+
+.hotel .thumb,
+.hotel .content {
+    padding: 5px;
+}
+
+.hotel .thumb {
+    text-align: center;
+}
+
+.hotel .thumb .glyphicon {
+    font-size: 71px;
+    margin-top: 20px;
+}
+
+.hotel .thumb img {
+    width: 100%;
+    height: auto;
+}
+
+.hotel .content .name {
+    color: #0275d8;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.hotel .content .address {
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.hotel .content .description {
+    font-size: 13px;
+    color: #333;
+}
+
+.hotel .content .price {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+}
+
+.hotel .content .price .original {
+    text-decoration: line-through;
+    color: #c6c6c6;
+    margin-right: 5px;
+}
+
+.hotel .content .price .now {
+    color: #000;
+}
+
+.hotel .content .price .price-label {
+    display: block;
+    font-size: 12px;
+    text-align: right;
+    color: #c6c6c6;
+}
+
+.hotel .content .travel-dates {
+    color: #000;
+    font-size: 13px;
+}
+
+
+
+.list-view .summary {
+    margin-bottom: 10px;
+}
+
+.search-form {
+    background: #00355f;
+    color: white;
+    padding-bottom: 80px;
+}
+
+.search-form .btn-primary {
+    background: #845ac7;
+    border-color: #845ac7;
+}
+
+.search-form .btn-primary:hover {
+    background: #7646c1;
+}
+
+.search-form h1 {
+    font-size: 40px;
+}
+
+
+.ui-slider .ui-widget-header {
+    border: 1px solid #aaaaaa;
+    background: #ffcb00  50% 50% repeat-x;
+    color: #ffcb00;
+    font-weight: bold;
+}
+.search-form input {
+    color: #222222;
+}
