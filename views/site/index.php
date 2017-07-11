@@ -10,10 +10,11 @@ $this->title = $title;
         <?=Html::img('images/logo_header.png',['title'=>'expedia','alt'=>'www.expedia.com'])?>
     </div>
     <?=$this->render('_search',['title'=>$title,'model'=>$searchModel])?>
-
-    <?= \yii\widgets\ListView::widget(
-        [
-            'dataProvider' => $dataProvider,
-            'itemView'     =>  '_item_view',
-        ])?>
+    <?if ($isSearchRequest) :?>
+        <?= \yii\widgets\ListView::widget(
+            [
+                'dataProvider' => $dataProvider,
+                'itemView'     =>  '_item_view',
+            ])?>
+    <?php endif;?>
 </div>

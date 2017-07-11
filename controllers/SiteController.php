@@ -69,6 +69,7 @@ class SiteController extends Controller
         $searchModel = new SearchForm();
         // Load string query to model
         $params=Yii::$app->request->get();
+        $isSearchRequest =false;
         $searchModel->load($params);
         if (Yii::$app->request->isAjax) {
             Yii::$app->response->format = Response::FORMAT_JSON;
@@ -78,6 +79,7 @@ class SiteController extends Controller
         //Search for match result
         $deals =[];
         if(!empty($params)) {
+            $isSearchRequest =true;
             $deals = $searchModel->search();
         
         }
@@ -93,6 +95,7 @@ class SiteController extends Controller
         return $this->render('index', [
             'searchModel'   => $searchModel,
             'dataProvider'  => $dataProvider,
+            'isSearchRequest'=>$isSearchRequest,
             'title'=>Inflector::pluralize($searchModel->productType) .' Deals'
         ]);
     }
