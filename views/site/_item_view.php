@@ -24,12 +24,12 @@
                 ?>
             </div>
             <div class="address"><?=$model->hotelInfo->hotelStreetAddress?>, <?=$model->hotelInfo->hotelLongDestination?></div>
-            <div class="description"><?=$model->hotelInfo->description?> </div>
+            <div class="description"><?=$model->hotelInfo->hotelDestination?> </div>
             <div class="price">
                 <span class="now">$<?=$model->hotelPricingInfo->averagePriceValue?></span>
                 <span class="price-label">avg/night</span>
             </div>
-            <div class="travel-dates"><?=$model->hotelInfo->travelStartDate?> - <?=$model->hotelInfo->travelEndDate?></div>
+            <div class="travel-dates"><?=implode('-',$model->offerDateRange->travelStartDate)?> - <?=implode('-',$model->offerDateRange->travelEndDate)?></div>
         </div>
     </div>
 </div>

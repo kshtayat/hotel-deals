@@ -113,6 +113,7 @@ class SearchForm extends Model
             if (!empty($params['maxTripStartDate'])) {
                 $params['maxTripStartDate']=$this->dateFormat($params['maxTripStartDate']);
             }
+            $params = array_filter($params);
             $response = HttpClient::get(self::API_URL, $params, [], [CURLOPT_TIMEOUT => 20]);
             // Check if the return request is Success
             if ($response['info']['code'] == 200) {

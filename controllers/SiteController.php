@@ -54,7 +54,6 @@ class SiteController extends Controller
         if (!empty($params)) {
             $isSearchRequest = true;
             $deals = $searchModel->search();
-            
         }
         $dataProvider = new ArrayDataProvider([
             'models' => $deals,
