@@ -1,0 +1,15 @@
+language: php
+
+php:
+ - 7.1
+ - 7.0
+ - 5.5
+
+install:
+  - composer require --prefer-dist --dev "codeception/codeception *" "codeception/specify *"
+
+before_script:
+  - php vendor/bin/codecept build
+
+script:
+  - php vendor/bin/codecept run
